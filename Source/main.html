@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<title>EZ prizelator</title>
+<link rel="stylesheet" type="text/css" href="layout2.css" />
+<script type="text/javascript" src="JSCharts3_demo/sources/jscharts.js"></script>
+</head>
+<body>
+
+
+
+
+
+
+
+<div id="info" align="right">
+	
+    	<p> Looget in som Jan Johansen, Tel: 12345678,  Adresse:Hamnegata 53 </p>
+    
+</div>
+
+<center>
+<div id="chartcontainer" ></div>
+</center>
+
+
+<script type="text/javascript">
+var dato = '19.03.2014';
+var myData = new Array([1, 4180], [2, 3290], [3, 4130], [4, 3720], [5, 4100], [6, 5070], [7, 4450], [8, 5870], [9, 4850], [10, 4360],[11, 3620], [12, 4770], [13, 4520], [14, 3620], [15, 3700], [16, 3480], [17, 3890], [18, 4650], [19, 5560], [20, 5000],[21, 4270], [22, 4460], [23, 3990], [24, 3660]);
+var myChart = new JSChart('chartcontainer', 'line');
+myChart.setDataArray(myData);
+
+myChart.colorize(['#FF9900','#FF9900']);
+myChart.setTitle(dato);
+myChart.setTitleFontSize(20);
+myChart.setSize(800, 500);
+myChart.setAxisNameX('Timer', false);
+myChart.setAxisNameY('Wh', false);
+myChart.setBackgroundColor('#A9A9A9');
+myChart.setAxisColor('#F0F8FF');
+myChart.setAxisNameColor('#FFF5EE');
+myChart.setGridColor('#FFF5EE');
+myChart.setTitleColor('#FFF5EE');
+myChart.setLineColor('#FF9900');
+myChart.setAxisValuesColor('#DCDCDC');
+myChart.setAxisValuesFontSize(12);
+myChart.setAxisNameFontSize(20);
+myChart.setAxisPaddingBottom(50);
+myChart.setAxisPaddingLeft(70);
+myChart.setLineWidth(4);
+
+for(var i = 0; i<24; i++){
+	myChart.setTooltip(myData[i]);
+}
+myChart.setFlagColor('#37379F');
+myChart.setFlagRadius(4);
+
+myChart.draw();
+</script>
+
+<ul class="kontroll">
+	<p>Statistikk</p>
+   
+    <li>
+	
+	Forbruk totalt: <br>  <input type="text" value="103210 Watttimer"id="bLabel" disabled="disabled" size="4"></li>
+	
+  <li>
+  Pris totalt: <br><input type="text" value="23,22 NOK" id="aLabel" disabled="disabled" size="4"> </li>
+	
+	</ul>
+</div>
+
+
+
+</body>
+</html>

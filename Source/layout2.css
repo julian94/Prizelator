@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	
+	background:url(background.png) no-repeat center center fixed;
+	-webkit-background-size:cover;
+	-moz--background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-image: url(main.png), url(background.png);
+	
+	font-size: 87.5%;
+	height:1200px;
+	font-family: 'Lato', sans-serif;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	line-height:1.5;
+	text-align:left;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	
+	
+	
+}
+#knapp{
+	
+	background:#FF8E00;
+	padding:10px;
+	margin:0;
+	width: 250px;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size:18px;
+		
+	}
+
+input{
+	
+	padding:10px;
+	width: 300px;
+	
+}
+
+#info{
+	text-shadow:none !important;
+	margin-right:20px;
+	font-size:16px;
+	
+}
+
+#telefon{
+	margin-top:15%;	
+}
+h2{
+	text-shadow:none !important;
+	margin-top:15%;
+}
+#chartcontainer{
+	margin-top:400px;
+	margin-left: 400px;
+}
+
+#kontrollpanel
+{
+	text-shadow:none !important;
+	margin-right:auto;
+	margin-right:auto;
+	width:60%;
+	background:#CCC;
+	transition: background-color 2.0s ease;
+	padding:10px 10px 10px 10px;
+	box-shadow:10px #5B5B5B;
+}
+
+
+ul {
+  list-style-type: none;
+  text-shadow:none;
+  margin: 0;
+  padding: 0;
+}
+ 
+li {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+ 
+li:last-child {
+  border: none;
+}
+ 
+li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 200px;
+ 
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+ 
+li a:hover {
+  font-size: 30px;
+  background: #f6f6f6;
+}
